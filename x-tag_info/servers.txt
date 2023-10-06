@@ -1,0 +1,4 @@
+URL: https://api.lightmetrics.co/v1
+Description: Production server
+URL: https://api-beta.lightmetrics.co/v1
+Description: Beta server

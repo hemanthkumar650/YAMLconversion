@@ -1,0 +1,5 @@
+Path: /fleets/{fleetId}/assets/{assetId}/violations/aggregate
+Method: get
+Summary: Aggregate Asset Violations
+Description: Aggregates the violations of a fleet with assetId.<br> Check this <a href="/docs/api-docs-v1-beta#tag/Assets/paths/~1fleets~1{fleetId}~1assets~1{assetId}~1aggregate~1violations/get">Asset Violations Aggregate API</a>
+

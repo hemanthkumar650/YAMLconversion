@@ -1,0 +1,4 @@
+- Security Scheme: Basic_Authorization
+  - Type: http
+  - Scheme: basic
+

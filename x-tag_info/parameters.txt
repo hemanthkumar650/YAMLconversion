@@ -1,0 +1,430 @@
+- Parameter Name: fleetId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/FleetId
+- Parameter Name: driverId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/DriverId
+- Parameter Name: tripId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/TripId
+- Parameter Name: assetId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/AssetId
+- Parameter Name: skip
+  - Description:
+Skips the input number of results<br> If the input skip is not a number or is less than 0, the default value will be used<br> Non-integer numbers will be rounded off to their floor value (1.9 -> 1)
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: limit
+  - Description:
+Maximum number of results returned<br> If the input limit is not a number or is less than 1, the default value will be used. If the input limit is greater than the maximum allowed limit, the maximum value will used for the request<br> Non-integer numbers will be rounded off to their floor value (1.9 -> 1)
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: bookmark
+  - Description:
+A string that enables you to specify which page of results you require. Used for paging through result sets.<br> Every request returns an opaque string under the bookmark key that can then be passed back in the next call to get the next page of results.<br> If any other query parameters change between requests, the results are undefined.<br> NOTE: `skip` and `bookmark` cannot be used together
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: before
+  - Description:
+If specified, the result will only include data for trips that started before the specified date (<strong>exclusive</strong>)<br> before = "2018-08-01" will return data for trips which started on or before "2018-07-31 23:59:59" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: after
+  - Description:
+If specified, the result will only include data for trips that started after the specified date (<strong>inclusive</strong>)<br> after = "2018-08-01" will return data for trips which started on or after "2018-08-01 00:00:00" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: afterEDVRUpdatedAt
+  - Description:
+If specified, the result will only include data for EDVR requests which were <em>last updated</em> after the specified date (<strong>inclusive</strong>)<br> after = "2018-08-01" will return data for EDVR requests which were last updated on or after "2018-08-01 00:00:00" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: beforeEDVRUpdatedAt
+  - Description:
+If specified, the result will only include data for EDVR requests which were <em>last updated</em> before the specified date (<strong>exclusive</strong>)<br> before = "2018-08-01" will return data for EDVR requests which were last updated on or before "2018-07-31 23:59:59" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: afterDVRUpdatedAt
+  - Description:
+If specified, the result will only include data for DVR requests which were <em>last updated</em> after the specified date (<strong>inclusive</strong>)<br> after = "2018-08-01" will return data for DVR requests which were last updated on or after "2018-08-01 00:00:00" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: beforeDVRUpdatedAt
+  - Description:
+If specified, the result will only include data for DVR requests which were <em>last updated</em> before the specified date (<strong>exclusive</strong>)<br> before = "2018-08-01" will return data for DVR requests which were last updated on or before "2018-07-31 23:59:59" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: beforeViolations
+  - Description:
+If specified, the result will only include data for violations which occurred before the specified date (<strong>exclusive</strong>). before = "2018-08-01" will return data for violations which occurred on or before "2018-07-31 23:59:59" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: afterViolations
+  - Description:
+If specified, the result will only include data for violations which occurred after the specified date (<strong>inclusive</strong>).<br> after = "2018-08-01" will return data for violations which occurred on or after "2018-08-01 00:00:00" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: challengeRaisedBeforeViolations
+  - Description:
+If specified, the result will only include data for violations which were challenged before the specified date (<strong>exclusive</strong>).<br> before = "2018-08-01" will return data for violations which are challenged on or before "2018-07-31 23:59:59" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: challengeRaisedAfterViolations
+  - Description:
+If specified, the result will only include data for violations which were challenged after the specified date (<strong>inclusive</strong>).<br> after = "2018-08-01" will return data for violations which are challenged on or after "2018-08-01 00:00:00" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: challengeResolvedBeforeViolations
+  - Description:
+If specified, the result will only include data for violations on which challenge was resolved before the specified date (<strong>exclusive</strong>).<br> before = "2018-08-01" will return data for violations for which challenge has been resolved on or before "2018-07-31 23:59:59" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: challengeResolvedAfterViolations
+  - Description:
+If specified, the result will only include data for violations on which challenge was resolved after the specified date (<strong>inclusive</strong>).<br> after = "2018-08-01" will return data for violations for which challenge has been resolved on or after "2018-08-01 00:00:00" in local time.<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: groupBy
+  - Description:
+Aggregates the data, grouping by month/week/day. If not specified, a single aggregate of all matching trips is returned
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: groupByViolations
+  - Description:
+Aggregates the data, grouping by month/week/day. If not specified, a single aggregate of all matching violations is returned
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: sort
+  - Description:
+Sorts the output in ascending/descending order of the 'key' fields
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: dutyType
+  - Description:
+Returns trip data filtered by the specified duty type<br> Duty types are mutually excusive categories that describe the fleet's assets (example: 'light', 'medium', and 'heavy'). Different sensitivities towards violations can be set for different duty types in the same fleet
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/DutyType
+- Parameter Name: division
+  - Description:
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/Division
+- Parameter Name: rangeType
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/RangeType
+- Parameter Name: beforeDVR
+  - Description:
+If specified, the result will only include data for DVR requests which were created before the specified date (<strong>exclusive</strong>)<br> before = "2018-08-01" will return data for DVR requests which were created on or before "2018-07-31 23:59:59" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: afterDVR
+  - Description:
+If specified, the result will only include data for DVR requests which were created after the specified date (<strong>inclusive</strong>)<br> after = "2018-08-01" will return data for DVR requests which were created on or after "2018-08-01 00:00:00" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: customTripParams
+  - Description:
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: assetsAfter
+  - Description:
+If specified, the result will only include assets which were active after the specified date (<strong>UTC, inclusive</strong>).<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01").<br> <strong>Note&colon;</strong> this input will be ignored when <em>activeOnly</em> or <em>currentOnly</em> is true.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: assetsBefore
+  - Description:
+If specified, the result will only include assets which were active before the specified date (<strong>UTC, exclusive</strong>).<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01").<br> <strong>Note&colon;</strong> this input will be ignored when <em>activeOnly</em> or <em>currentOnly</em> is true.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: fleetActiveOnly
+  - Description:
+If <strong>true</strong>, the result will only include assets which are currently active.<br> <strong>Note&colon;</strong> <em>before</em>, <em>after</em>, <em>anyTags</em> and <em>allTags</em> inputs will be ignored when this parameter is true.
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: fleetCurrentOnly
+  - Description:
+If <strong>true</strong>, the result will include only the current state of assets.<br> Use this for fetching a list of all unique asset IDs.<br> <strong>Note&colon;</strong> <em>before</em>, <em>after</em>, <em>anyTags</em> and <em>allTags</em> inputs will be ignored when this parameter is true.
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: activeOnly
+  - Description:
+If <strong>true</strong>, the result will only include assets which are currently active.<br> <strong>Note&colon;</strong> <em>before</em> and <em>after</em> inputs will be ignored when this parameter is true.
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: currentOnly
+  - Description:
+If <strong>true</strong>, the result will include only the current state of assets.<br> Use this for fetching a list of all unique asset IDs.<br> <strong>Note&colon;</strong> <em>before</em> and <em>after</em> inputs will be ignored when this parameter is true.
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: eventIndex
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: #/components/schemas/EventIndex
+- Parameter Name: currentSwversion
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/CurrentSwVersion
+- Parameter Name: maxBuildNumber
+  - Description:
+If specified, the result will only include a list of smartCam versions whose build numbers are less than the specified maximum buildNumber.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: minBuildNumber
+  - Description:
+If specifed, the result will only include a list of smartCam versions whose build numbers are greater than the specified minimum build Number.<br><br> <strong>Note:</strong> If both minBuildNumber and maxBuildNumber are specified, the result will include a list of smartcam Versions whose buildNumbers fall in the range of minBuildNumber and maxBuildNumber
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: buildNumber
+  - Description:
+If specified, the result will include only the smartCam version of the specified build Number.<br> When buildNumber is specified, maxBuildNumber and minBuildNumber should not be specified.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: preRelease
+  - Description:
+If <strong>true</strong>, returns the list of available latest prerelease and release versions.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: frGroupIdPathParam
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/FRGroupId
+- Parameter Name: frPersonIdPathParam
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/FRPersonId
+- Parameter Name: frSampleIdPathParam
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/FRSampleId
+- Parameter Name: assetSort
+  - Description:
+Optional&colon; sorts the output in ascending/descending order of the <em>sortBy</em> field.<br> This query parameter is only accepted when when one of <em>activeOnly</em> or <em>currentOnly</em> is true.<br> The value is set to 'asc' when <em>sort</em> is not specfied and <em>sortBy</em> is.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: assetSortBy
+  - Description:
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: ignitionId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/IgnitionId
+- Parameter Name: bookmarkedOnly
+  - Description:
+If set to <strong>true</strong>, result will only include the violations that were bookmaked.<br> If set to <strong>false</strong>, result will only include the violations that were <em>not</em> bookmaked.<br> Violations will be ordered by <em>timestamp</em> in the specified <strong>sort</strong> order irrespective of input <strong>sortBy</strong> parameter.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: coachingCompleted
+  - Description:
+If set to <strong>true</strong>, result will only include the events that are coachingCompleted.<br> If set to <strong>false</strong>, result will only include the events that are <em>not</em> coachingCompleted.<br> Events will be ordered by <em>timestamp</em> in the specified <strong>sort</strong> order.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: tagSearch
+  - Description:
+If set to any one of the valid tags, result will only include violations having the specified tag. Results will be ordered by <em>timestamp</em> in the specified <strong>sort</strong> order irrespective of input <strong>sortBy</strong> parameter.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: bookmarkedOnlyDVR
+  - Description:
+If set to <strong>true</strong>, result will only include the DVR requests that were bookmaked.<br> If set to <strong>false</strong>, result will only include the DVR requests that were <em>not</em> bookmaked.<br>
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: tagSearchDVR
+  - Description:
+If set to any one of the valid tags, result will only include DVR requests having the specified tag.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: coachingCompletedDVR
+  - Description:
+If set to <strong>true</strong>, result will only include the DVR Requests that are coachingCompleted.<br> If set to <strong>false</strong>, result will only include the DVR Requests that are <em>not</em> coachingCompleted.<br> DVR Requests will be ordered by <em>timestamp</em> in the specified <strong>sort</strong> order.
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: mnc
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: #/components/schemas/MNC
+- Parameter Name: mcc
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: #/components/schemas/MCC
+- Parameter Name: UPIncludeDefaults
+  - Description:
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: deviceId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/DeviceId
+- Parameter Name: softwareId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/SoftwareId
+- Parameter Name: uploadRequestId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: 
+- Parameter Name: notificationId
+  - Description:
+
+  - Required: True
+  - Location (in): path
+  - Schema Reference: #/components/schemas/ClearDriverStateNotificationId
+- Parameter Name: semver
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: #/components/schemas/Semver
+- Parameter Name: deviceEventsBefore
+  - Description:
+If specified, the result will only include data for events generated before the specified date (<strong>exclusive</strong>)<br> before = "2018-08-01" will return data for events generated on or before "2018-07-31 23:59:59" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01")
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: deviceEventsAfter
+  - Description:
+If specified, the result will only include data for events generated after the specified date (<strong>inclusive</strong>)<br> after = "2018-08-01" will return data for events generated on or after "2018-08-01 00:00:00" in local time<br> The hours, minutes and seconds values in the input date will be ignored ("2018-08-01 13:04:12" will be read as "2018-08-01").<br> <strong>Note:</strong> If not specfied the result will include events generated in the past 30 days
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/FullDate
+- Parameter Name: reportIndex
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: 
+- Parameter Name: deviceIdQueryParams
+  - Description:
+
+  - Required: True
+  - Location (in): query
+  - Schema Reference: #/components/schemas/DeviceId
+- Parameter Name: signalType
+  - Description:
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: #/components/schemas/DeviceSignalType
+- Parameter Name: semiProvisioned
+  - Description:
+If <em>true,</em> only semiProvisioned devices will be returned.<br> If <em>false,</em> returns all the devices.<br> `semiProvisioned`:false has no impact on the API response.<br><br> <strong>Note:</strong> Both provisioned & semiProvisioned filters should not be used together
+
+  - Required: False
+  - Location (in): query
+  - Schema Reference: 

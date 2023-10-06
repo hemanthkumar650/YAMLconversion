@@ -1,0 +1,5 @@
+API Title: Lightmetrics API Documentation
+API Version: v1.0.0
+API Description:
+Documentation of various Lightmetrics web services<br> <a href="https://lightmetrics.freshdesk.com" target="_blank">Lightmetrics Support</a>
+
