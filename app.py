@@ -1,6 +1,40 @@
 import os
 import yaml
 
+def generate_api_suggestions(openapi_data):
+    suggestions = []
+
+    security = openapi_data.get("security", [])
+    for security_item in security:
+        for security_key, security_value in security_item.items():
+            suggestions.append(f"Security: {security_key}")
+            if isinstance(security_value, list):
+                suggestions.extend([f"- {item}" for item in security_value])
+
+    paths = openapi_data.get("paths", {})
+    for path, path_info in paths.items():
+        suggestions.append(f"Path: {path}")
+        for http_method, method_info in path_info.items():
+            suggestions.append(f"  - HTTP Method: {http_method}")
+            tags = method_info.get("tags", [])
+            suggestions.extend([f"    - Tag: {tag}" for tag in tags])
+            summary = method_info.get("summary", "")
+            suggestions.append(f"    - Summary: {summary}")
+            description = method_info.get("description", "")
+            suggestions.append(f"    - Description: {description}")
+            parameters = method_info.get("parameters", [])
+            for param in parameters:
+                ref = param.get("$ref", "")
+                if ref:
+                    suggestions.append(f"    - Parameter Reference: {ref}")
+            responses = method_info.get("responses", {})
+            for response_code, response_info in responses.items():
+                description = response_info.get("description", "")
+                suggestions.append(f"    - Response {response_code}: {description}")
+                
+
+    return suggestions
+
 def create_entry_text_files(yaml_data, output_dir):
     try:
         os.makedirs(output_dir, exist_ok=True)
@@ -39,8 +73,8 @@ def create_entry_text_files(yaml_data, output_dir):
                 components_file.write(f"- Security Scheme: {scheme_name}\n")
                 components_file.write(f"  - Type: {scheme_type}\n")
                 components_file.write(f"  - Scheme: {scheme_scheme}\n")
-            components_file.write("\n")  
-            
+            components_file.write("\n")
+
         parameters = yaml_data.get("components", {}).get("parameters", {})
         with open(os.path.join(output_dir, 'parameters.txt'), 'w') as parameters_file:
             for param_name, param_info in parameters.items():
@@ -53,6 +87,11 @@ def create_entry_text_files(yaml_data, output_dir):
                 parameters_file.write(f"  - Required: {param_required}\n")
                 parameters_file.write(f"  - Location (in): {param_name_in}\n")
                 parameters_file.write(f"  - Schema Reference: {schema_ref}\n")
+
+        api_suggestions = generate_api_suggestions(yaml_data)
+        with open(os.path.join(output_dir, 'api_suggestions.txt'), 'w') as api_suggestions_file:
+            for suggestion in api_suggestions:
+                api_suggestions_file.write(f"{suggestion}\n")
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -71,7 +110,7 @@ def process_openapi_yaml(yaml_file, output_dir):
         return None
 
 input_yaml_file = '/home/hemanth/Desktop/YAMLconversion/api-docs-v1-external(1).yaml'  
-output_directory = '/home/hemanth/Desktop/YAMLconversion/x-tag_info' 
+output_directory = '/x-tag_info' 
 
 result = process_openapi_yaml(input_yaml_file, output_directory)
 
@@ -79,40 +118,3 @@ if result:
     print(result)
 else:
     print("Processing failed.")
-
-yaml_file_path = "/home/hemanth/Desktop/YAMLconversion/api-docs-v1-external(1).yaml"
-
-def generate_api_suggestions(api_data):
-    suggestions = []
-    for path, methods in api_data.items():
-        for method, info in methods.items():
-            summary = info.get("summary", "No summary available")
-            description = info.get("description", "No description available")
-            suggestions.append(f"Path: {path}\nMethod: {method}\nSummary: {summary}\nDescription: {description}\n")
-    return suggestions
-
-start_line = 12311  
-end_line = 12431  
-selected_lines = []
-
-with open(yaml_file_path, 'r') as yaml_file:
-    lines = yaml_file.readlines()
-    for line_number, line in enumerate(lines, start=1):
-        if start_line <= line_number <= end_line:
-            selected_lines.append(line)
-
-selected_yaml_data = ''.join(selected_lines)
-
-data = yaml.safe_load(selected_yaml_data)
-
-api_suggestions = generate_api_suggestions(data)
-
-output_file_name = "/home/hemanth/Desktop/YAMLconversion/x-tag_info/Aggregate_asset_violations.txt"
-
-with open(output_file_name, "w") as output_file:
-    for suggestion in api_suggestions:
-        output_file.write(suggestion)
-
-print(f"API suggestions have been saved to {output_file_name}")
-
-  
