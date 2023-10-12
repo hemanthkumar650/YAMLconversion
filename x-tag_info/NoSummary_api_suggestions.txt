@@ -1,0 +1,8 @@
+Path: /evaluate/user-permissions
+  - HTTP Method: get
+    - Tags: User Permissions
+    - Summary: NoSummary
+    - Description: Evaluates the user permissions saved at each level and returns the permissions.
+
+    - Response 200: OK
+    - Response 400: 
