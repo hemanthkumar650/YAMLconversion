@@ -1,8 +1,6 @@
 import os
 import yaml
 
-import os
-
 def generate_api_suggestions(openapi_data, output_dir):
     try:
         os.makedirs(output_dir, exist_ok=True)
@@ -33,7 +31,6 @@ def generate_api_suggestions(openapi_data, output_dir):
                         path_file.write(f"    - Response {response_code}: {description}\n")
     except Exception as e:
         print(f"An error occurred: {e}")
-
 
 def create_entry_text_files(yaml_data, output_dir):
     try:
