@@ -20,6 +20,25 @@ def generate_api_suggestions(openapi_data, output_dir):
                     path_file.write(f"    - Summary: {summary}\n")
                     description = method_info.get("description", "")
                     path_file.write(f"    - Description: {description}\n")
+
+                    if http_method == "post":
+                        request_body = method_info.get("requestBody", {})
+                        if request_body:
+                            path_file.write("    - Request Body:\n")
+                            required = request_body.get("required", False)
+                            path_file.write(f"      - Required: {required}\n")
+                            content = request_body.get("content", {})
+                            for content_type, content_info in content.items():
+                                path_file.write(f"      - Content Type: {content_type}\n")
+                                schema = content_info.get("schema", {})
+                                if schema:
+                                    properties = schema.get("properties", {})
+                                    if properties:
+                                        path_file.write("      - Schema Properties:\n")
+                                        for prop_name, prop_info in properties.items():
+                                            prop_description = prop_info.get("description", "")
+                                            path_file.write(f"        - {prop_name}:\n")
+                                            path_file.write(f"          - Description: {prop_description}\n")
                     parameters = method_info.get("parameters", [])
                     for param in parameters:
                         ref = param.get("$ref", "")
@@ -102,8 +121,8 @@ def process_openapi_yaml(yaml_file, output_dir):
         print(f"An error occurred: {e}")
         return None
 
-input_yaml_file = '/home/hemanth/Desktop/YAMLconversion/api-docs-v1-external(1).yaml'  
-output_directory = '/home/hemanth/Desktop/YAMLconversion/x-tag_info' 
+input_yaml_file = '/api-docs-v1-external(1).yaml'  
+output_directory = '/x-tag_info' 
 
 result = process_openapi_yaml(input_yaml_file, output_directory)
 
