@@ -4,7 +4,6 @@ import yaml
 def generate_api_suggestions(openapi_data, output_dir):
     try:
         os.makedirs(output_dir, exist_ok=True)
-
         paths = openapi_data.get("paths", {})
         for path, path_info in paths.items():
             summary = path_info.get("summary", "NoSummary")
@@ -39,6 +38,7 @@ def generate_api_suggestions(openapi_data, output_dir):
                                             prop_description = prop_info.get("description", "")
                                             path_file.write(f"        - {prop_name}:\n")
                                             path_file.write(f"          - Description: {prop_description}\n")
+
                     parameters = method_info.get("parameters", [])
                     for param in parameters:
                         ref = param.get("$ref", "")
@@ -48,6 +48,7 @@ def generate_api_suggestions(openapi_data, output_dir):
                     for response_code, response_info in responses.items():
                         description = response_info.get("description", "")
                         path_file.write(f"    - Response {response_code}: {description}\n")
+
     except Exception as e:
         print(f"An error occurred: {e}")
 
