@@ -1,0 +1,5 @@
+HTTP Method: get
+Tag: Provisioning
+Summary: List Valid Vendors
+Description: Valid vendor IDs for device provisioning
+Response 200: OK

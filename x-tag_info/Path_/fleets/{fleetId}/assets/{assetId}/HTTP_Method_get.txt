@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Assets
+Summary: Asset Details
+Description: Returns package configuration details for one asset.
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Response 200: OK
+Response 400: 
+Response 404: Not Found

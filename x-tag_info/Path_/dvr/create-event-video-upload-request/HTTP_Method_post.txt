@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: DVR
+Summary: Create Event Video Upload Request
+Description: Registers an upload request for event video<br> Status of upload requests can be fetched using the GET Trip Details API by passing the 'includeViolations' query parameter
+
+Response 200: OK
+Response 400: 

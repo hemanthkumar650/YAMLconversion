@@ -1,0 +1,8 @@
+HTTP Method: post
+Tag: Device State & Tracking
+Summary: Trigger Device Task
+Description: Triggers the specified device task.
+
+Parameter Reference: #/components/parameters/deviceId
+Response 200: 
+Response 400: 

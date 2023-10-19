@@ -1,0 +1,11 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet Trips by Ignition ID
+Description: Lists the trips taken by the fleet for a specific ignition ID
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/ignitionId
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

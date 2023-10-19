@@ -1,0 +1,8 @@
+HTTP Method: post
+Tag: Provisioning
+Summary: Update Fleet State
+Description: Changes the state of the fleet.<br> Devices belonging to `DISABLED` fleets will not be allowed to use LM services and hence cannot upload trip data to the cloud. Such devices will still record trips and store information locally for ten days, after which no new trips will be recorded. All trip data saved on the devices will be purged sixty days after the fleet is disabled. Trip data previously uploaded to the cloud will still be available. When a fleet is re-enabled, devices will start functioning normally again and any data on their disks that is not already in the cloud is then uploaded.<br> All fleets are `ENABLED` by default.
+
+Parameter Reference: #/components/parameters/fleetId
+Response 200: 
+Response 400: 

@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Face Recognition
+Summary: List Group Persons
+Description: 
+Parameter Reference: #/components/parameters/frGroupIdPathParam
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

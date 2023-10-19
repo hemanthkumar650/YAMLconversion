@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Device Task Status
+Description: Status of the triggered device task.
+
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK

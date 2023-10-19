@@ -1,0 +1,6 @@
+HTTP Method: get
+Tag: SDK Configuration
+Summary: Fetch Common SDK Configuration
+Description: Returns the common SDK configuration<br> Common settings are used when fleet-level settings are not available (common dutyType1.speedingEnabled will be used when fleet-level dutyType1.speedingEnabled is not set)
+
+Response 200: OK

@@ -1,0 +1,8 @@
+HTTP Method: patch
+Tag: Trip
+Summary: Update event metadata
+Description: Add extra information to violation events of a trip<br> <strong>Only the fields which were specified in the request body will be updated (<em>tags</em> values are completely replaced if specified in the input)</strong><br>
+
+Response 200: OK
+Response 400: 
+Response 404: Trip or violation not found

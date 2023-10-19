@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Fleet
+Summary: External Events Aggregate
+Description: Returns count of all external events for a fleet.
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeViolations
+Parameter Reference: #/components/parameters/afterViolations
+Response 200: OK
+Response 400: 

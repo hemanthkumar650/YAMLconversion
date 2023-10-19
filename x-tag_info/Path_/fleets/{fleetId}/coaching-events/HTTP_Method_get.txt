@@ -1,0 +1,13 @@
+HTTP Method: get
+Tag: Fleet
+Summary: Coaching Event List
+Description: List the coaching events of the fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeViolations
+Parameter Reference: #/components/parameters/afterViolations
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/coachingCompleted
+Response 200: OK
+Response 400: 

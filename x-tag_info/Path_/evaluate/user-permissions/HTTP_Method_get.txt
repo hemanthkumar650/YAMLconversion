@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: User Permissions
+Summary: Evaluate User Permissions
+Description: Evaluates the user permissions saved at each level and returns the permissions.
+
+Response 200: OK
+Response 400: 

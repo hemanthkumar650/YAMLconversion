@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: DVR
+Summary: Captured Image Details
+Description: Returns the details of the captured image.
+
+Parameter Reference: #/components/parameters/deviceId
+Parameter Reference: #/components/parameters/uploadRequestId
+Response 200: OK
+Response 400: 
+Response 404: Image upload request not found

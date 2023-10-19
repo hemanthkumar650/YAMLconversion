@@ -1,0 +1,15 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet Trips
+Description: Lists the trips taken by the fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/dutyType
+Parameter Reference: #/components/parameters/division
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/customTripParams
+Response 200: OK
+Response 400: 

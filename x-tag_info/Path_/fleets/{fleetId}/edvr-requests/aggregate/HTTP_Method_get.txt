@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Fleet
+Summary: Aggregate EDVR requests
+Description: Returns count of all EDVR requests for a fleet based on different statuses
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeEDVRUpdatedAt
+Parameter Reference: #/components/parameters/afterEDVRUpdatedAt
+Response 200: OK
+Response 400: 

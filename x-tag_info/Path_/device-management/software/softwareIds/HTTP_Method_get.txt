@@ -1,0 +1,6 @@
+HTTP Method: get
+Tag: Software Updates
+Summary: List Software Channels
+Description: Returns the list of all the available software channels.
+
+Response 200: OK

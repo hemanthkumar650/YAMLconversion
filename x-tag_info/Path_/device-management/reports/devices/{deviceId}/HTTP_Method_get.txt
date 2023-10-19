@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Device Diagnostic Report
+Description: Returns the device's full diagnostic report with signals info.
+
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK
+Response 400: 
+Response 404: The device diagnostics info does not exist.

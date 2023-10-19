@@ -1,0 +1,8 @@
+HTTP Method: get
+Tag: Livestreaming
+Summary: Stream Details
+Description: Returns livestream details and current status
+
+Response 200: OK
+Response 400: 
+Response 404: 

@@ -1,0 +1,12 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List EDVR Requests
+Description: Lists the EDVR requests for a fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeEDVRUpdatedAt
+Parameter Reference: #/components/parameters/afterEDVRUpdatedAt
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/sort
+Response 200: OK
+Response 400: 

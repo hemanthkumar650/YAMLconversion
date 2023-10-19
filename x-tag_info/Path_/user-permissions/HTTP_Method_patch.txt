@@ -1,0 +1,7 @@
+HTTP Method: patch
+Tag: User Permissions
+Summary: Update Common User Permissions
+Description: Updates the common user permissions that apply to all fleets unless overridden at fleet or driver level.
+
+Response 200: 
+Response 400: 

@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Driver
+Summary: Aggregate Driver Violations
+Description: Aggregates the violations of a driver
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/driverId
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Response 200: OK
+Response 400: 

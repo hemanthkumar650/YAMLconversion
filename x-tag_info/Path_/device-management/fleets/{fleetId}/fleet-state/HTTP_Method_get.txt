@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Provisioning
+Summary: Fleet State History
+Description: Returns history log of fleet state changes.<br> If the most recent state is `ENABLED` or if there are no entries in the <em>rows</em> list in the response, then the fleet is considered active. If not, the fleet is considered `DISABLED` and devices belonging to the fleet will not be allowed to use LM services.
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

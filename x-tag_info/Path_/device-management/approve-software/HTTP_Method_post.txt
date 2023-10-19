@@ -1,0 +1,8 @@
+HTTP Method: post
+Tag: Software Updates
+Summary: Approve Software
+Description: Sign off on a software version, making it available to devices to download.
+Response 200: 
+Response 202: Accepted. Some input device IDs were unrecognized.
+Response 400: 
+Response 404: Not found

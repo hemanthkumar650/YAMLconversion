@@ -1,0 +1,8 @@
+HTTP Method: get
+Tag: Provisioning
+Summary: Device Details
+Description: Returns the details of the device identified by input device ID
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK
+Response 400: 
+Response 404: Device not found

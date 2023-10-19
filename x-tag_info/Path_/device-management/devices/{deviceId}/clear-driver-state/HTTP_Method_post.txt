@@ -1,0 +1,6 @@
+HTTP Method: post
+Tag: Device State & Tracking
+Summary: Clear Driver State
+Description: Remotely clears saved driver state (driver ID and driver name) from the specified device
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK

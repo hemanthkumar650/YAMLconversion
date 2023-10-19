@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Remote Control Status
+Description: Returns the details of the requested remote control action.
+Response 200: OK
+Response 400: 
+Response 404: RequestId not found

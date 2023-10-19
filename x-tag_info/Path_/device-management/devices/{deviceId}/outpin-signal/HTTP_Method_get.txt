@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Device Outpin Signal
+Description: Returns the current saved device outpin signal info.
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK
+Response 400: 

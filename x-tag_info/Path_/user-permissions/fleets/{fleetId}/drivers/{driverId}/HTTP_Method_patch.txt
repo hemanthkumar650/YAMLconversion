@@ -1,0 +1,9 @@
+HTTP Method: patch
+Tag: User Permissions
+Summary: Update Driver Permissions
+Description: Updates driver-level user permissions
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/driverId
+Response 200: 
+Response 400: 

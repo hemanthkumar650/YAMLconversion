@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Livestreaming
+Summary: Usage (Device Level)
+Description: Returns livestream usage metrics for input fleetId and deviceId
+
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Response 200: OK
+Response 400: 

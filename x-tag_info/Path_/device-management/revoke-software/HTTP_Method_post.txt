@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: Software Updates
+Summary: Revoke Approved Sofwtare
+Description: Revokes already approved software globally or for individual devices.
+Response 200: 
+Response 400: 
+Response 406: Globally approved software version cannot be revoked for individual devices.

@@ -1,0 +1,15 @@
+HTTP Method: get
+Tag: Driver
+Summary: Aggregate Driver Trips
+Description: Aggregates the trip and event counts of the driver
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/driverId
+Parameter Reference: #/components/parameters/dutyType
+Parameter Reference: #/components/parameters/groupBy
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/division
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: 
+Response 400: 

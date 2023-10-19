@@ -1,0 +1,9 @@
+HTTP Method: delete
+Tag: Face Recognition
+Summary: Delete Person Details
+Description: Deletes metadata <strong>and all saved media samples of the person</strong>
+Parameter Reference: #/components/parameters/frGroupIdPathParam
+Parameter Reference: #/components/parameters/frPersonIdPathParam
+Response 200: 
+Response 400: 
+Response 404: Person not enrolled

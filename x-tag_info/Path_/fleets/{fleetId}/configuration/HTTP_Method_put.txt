@@ -1,0 +1,8 @@
+HTTP Method: put
+Tag: SDK Configuration
+Summary: Overwrite Fleet SDK Configuration
+Description: Replaces the fleet's SDK configuration with the input
+
+Parameter Reference: #/components/parameters/fleetId
+Response 200: 
+Response 400: 

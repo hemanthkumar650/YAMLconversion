@@ -1,4 +1,0 @@
-Assets
-SDK Configuration
-User Preferences
-User Permissions

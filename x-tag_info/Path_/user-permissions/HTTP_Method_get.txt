@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: User Permissions
+Summary: Fetch Common User Permissions
+Description: Returns the saved common user permissions that apply to all fleets unless overridden at fleet or driver level
+
+Response 200: OK
+Response 400: 

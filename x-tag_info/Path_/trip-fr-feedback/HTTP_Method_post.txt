@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: Trip
+Summary: Trip FR Feedback
+Description: Submit feedback on the trip's automatic face recognition
+Response 200: OK
+Response 400: 
+Response 404: No trip was found matching the input tripId

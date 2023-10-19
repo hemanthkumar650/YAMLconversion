@@ -1,0 +1,10 @@
+HTTP Method: post
+Tag: DVR
+Summary: Request Image Capture
+Description: Requests specified device to capture and upload an image.<br> At most four requests per device per hour should be generated. Any more than that are liable to get throttled.<br><br>
+<strong>Note:</strong> Starting from APK version <strong>1.14.0</strong>, MultiView images are supported.<br>
+
+Response 200: OK
+Response 400: 
+Response 404: The trip does not exist or the trip does not have a valid notificationToken.
+Response 406: Unsupported operation/input

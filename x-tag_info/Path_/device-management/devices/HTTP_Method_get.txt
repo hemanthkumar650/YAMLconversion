@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Provisioning
+Summary: List Devices
+Description: Returns a list of registered devices
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/semiProvisioned
+Response 200: OK
+Response 400: 

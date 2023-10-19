@@ -1,0 +1,9 @@
+HTTP Method: post
+Tag: Provisioning
+Summary: Assign Fleet
+Description: Assigns fleetId to unprovisioned devices<br> If any input unprovisioned device ID is assigned to a different fleet, it will be transferred to the input fleet and it will be returned in the response <em>transfers</em> array.<br><br>
+If any input device ID is already provisioned, and if there is any change in the metadata then only metadata will be updated  else no changes will be made against it.<br>
+
+Response 200: 
+Response 202: Accepted. Some device IDs were not recognized.
+Response 400: 

@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Fleet
+Summary: Aggregate DVR Requests
+Description: Returns count of all DVR requests for a fleet based on different statuses
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeDVRUpdatedAt
+Parameter Reference: #/components/parameters/afterDVRUpdatedAt
+Response 200: OK
+Response 400: 

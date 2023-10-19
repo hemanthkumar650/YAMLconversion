@@ -1,0 +1,8 @@
+HTTP Method: get
+Tag: Fleet
+Summary: Fleet Details
+Description: Returns fleet details
+Parameter Reference: #/components/parameters/fleetId
+Response 200: OK
+Response 400: 
+Response 404: The fleetId doesn't exist

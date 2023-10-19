@@ -1,0 +1,12 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Device Tracking Events
+Description: Returns list of device events generated in the input time range.<br> Data can be fetched only for last <strong>30 days</strong> or maximum of <strong>10000</strong> events per device whichever happens first.
+
+Parameter Reference: #/components/parameters/deviceId
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/deviceEventsBefore
+Parameter Reference: #/components/parameters/deviceEventsAfter
+Response 200: OK
+Response 400: 

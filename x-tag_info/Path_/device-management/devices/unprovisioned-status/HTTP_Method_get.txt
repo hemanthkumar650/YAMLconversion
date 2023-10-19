@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Unprovisioned Devices Status
+Description: Lists the unprovisioned devices communicating with the API servers.<br> Data can be fetched only for last <strong>14 days</strong>.
+
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

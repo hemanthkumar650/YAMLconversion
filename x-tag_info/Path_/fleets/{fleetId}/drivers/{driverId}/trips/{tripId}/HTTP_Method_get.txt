@@ -1,0 +1,11 @@
+HTTP Method: get
+Tag: Trip
+Summary: Fetch Trip Details
+Description: Returns the details of the trip identified by input tripId
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/driverId
+Parameter Reference: #/components/parameters/tripId
+Parameter Reference: #/components/parameters/customTripParams
+Response 200: OK
+Response 400: 
+Response 404: No trip was found matching the input fleetId, driverId and tripId combination

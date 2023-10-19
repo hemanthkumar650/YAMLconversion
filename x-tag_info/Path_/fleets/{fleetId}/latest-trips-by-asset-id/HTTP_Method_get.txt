@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet Latest Trips
+Description: Lists the latest trip by every asset of the fleet sorted by assetId in the order specified by the 'sort' parameter
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

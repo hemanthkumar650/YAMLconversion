@@ -1,0 +1,7 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: Device Lane Calibration Status
+Description: Returns the current saved lane calibration status on the device
+Parameter Reference: #/components/parameters/deviceId
+Response 200: OK
+Response 400: 

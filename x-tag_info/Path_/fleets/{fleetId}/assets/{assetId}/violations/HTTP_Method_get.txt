@@ -1,0 +1,12 @@
+HTTP Method: get
+Tag: Assets
+Summary: List Asset Violations
+Description: Lists the violations commited by the fleet with assetId.
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Parameter Reference: #/components/parameters/beforeViolations
+Parameter Reference: #/components/parameters/afterViolations
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/limit
+Response 200: OK
+Response 400: 

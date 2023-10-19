@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: Webhook Registration
+Summary: Register Webhook
+Description: Saves a webhook URL that will be notified about specific events like DVR uploads and event video uploads<br> Only one webhook per event type will be recorded, which will be replaced upon calling the API with the same 'trigger' input<br> <strong>Note: Updates may take up to 5 minutes to be processed</strong>
+
+Response 200: 
+Response 400: 

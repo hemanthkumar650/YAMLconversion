@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Fleet
+Summary: Aggregate Fleet Violations
+Description: Aggregates the violations of a fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Response 200: OK
+Response 400: 

@@ -1,0 +1,10 @@
+HTTP Method: post
+Tag: Livestreaming
+Summary: Request Livestream
+Description: Creates a livestreaming session and sends a notification to the selected device requesting live video upload.<br> <strong>One of tripId and deviceId is required in the input.</strong><br> Length of individual livestream instances is currently limited to 30 minutes.<br><br> <strong>Usage limits&colon; 100 minutes of viewing per device per month, with 24 hour data retention (updated 20th Dec 2021)</strong>. More minutes can be provisioned via the asset API (input field&colon; recurringLivestreamExtraMinutes).<br> Livestream minutes used are calculated as sum of (views on stream * stream upload duration). For example, on a device in a given month&colon; if one 10-minute livestream was viewed twice and another 15-minute livestream was viewed once, then the total minutes used on the device for that month will be (10 &#x2a; 2) + (15 &#x2a; 1) = 35 <br><br>
+
+Response 200: OK
+Response 400: 
+Response 404: 
+Response 406: 
+Response 409: A different livestream session is already active on the device

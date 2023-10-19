@@ -1,0 +1,15 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet DVR Requests
+Description: Lists the DVR requests on the trips for the fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeDVR
+Parameter Reference: #/components/parameters/afterDVR
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/bookmarkedOnlyDVR
+Parameter Reference: #/components/parameters/tagSearchDVR
+Parameter Reference: #/components/parameters/coachingCompletedDVR
+Response 200: OK
+Response 400: 

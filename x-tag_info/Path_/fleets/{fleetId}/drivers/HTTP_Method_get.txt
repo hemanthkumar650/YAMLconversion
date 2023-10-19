@@ -1,0 +1,11 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet Drivers
+Description: Returns list of drivers in the input fleet who took trips in the input time interval
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/dutyType
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/division
+Response 200: OK
+Response 400: 

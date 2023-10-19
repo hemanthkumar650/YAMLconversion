@@ -1,0 +1,15 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Fleet External Events
+Description: Lists the external events made by the fleet
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/beforeViolations
+Parameter Reference: #/components/parameters/afterViolations
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/bookmarkedOnly
+Parameter Reference: #/components/parameters/tagSearch
+Parameter Reference: #/components/parameters/coachingCompleted
+Response 200: OK
+Response 400: 

@@ -1,0 +1,13 @@
+HTTP Method: get
+Tag: Assets
+Summary: Aggregate Asset Trips
+Description: Aggregates the trip and event counts of the asset
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Parameter Reference: #/components/parameters/groupBy
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: 
+Response 400: 

@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: Software Updates
+Summary: List Software Versions
+Description: Returns a list of software versions available.</br> Software builds will be different for different device models.
+
+Parameter Reference: #/components/parameters/softwareId
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

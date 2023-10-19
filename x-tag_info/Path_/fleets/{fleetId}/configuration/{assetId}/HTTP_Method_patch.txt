@@ -1,0 +1,9 @@
+HTTP Method: patch
+Tag: SDK Configuration
+Summary: Update Asset SDK Configuration
+Description: Updates the SDK settings for an individual asset.
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Response 200: 
+Response 400: 

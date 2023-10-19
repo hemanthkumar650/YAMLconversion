@@ -1,0 +1,8 @@
+HTTP Method: post
+Tag: Provisioning
+Summary: Deprovision Devices
+Description: Removes any fleet or asset associations on input devices.<br>
+
+Response 200: Success
+Response 202: Accepted. Some device IDs were not recognized.
+Response 400: 

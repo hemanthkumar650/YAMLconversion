@@ -1,0 +1,6 @@
+HTTP Method: get
+Tag: Fleet
+Summary: List Assets with Incorrect Camera Mounting
+Description: Provides the list of assets whose cameras were badly mounted resulting in ADAS event misses
+Response 200: OK
+Response 400: 

@@ -1,0 +1,11 @@
+HTTP Method: get
+Tag: Assets
+Summary: Aggregate Asset Violations
+Description: Aggregates the violations of a fleet with assetId.<br> Check this <a href="/docs/api-docs-v1-beta#tag/Assets/paths/~1fleets~1{fleetId}~1assets~1{assetId}~1aggregate~1violations/get">Asset Violations Aggregate API</a>
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Parameter Reference: #/components/parameters/beforeViolations
+Parameter Reference: #/components/parameters/afterViolations
+Response 200: OK
+Response 400: 

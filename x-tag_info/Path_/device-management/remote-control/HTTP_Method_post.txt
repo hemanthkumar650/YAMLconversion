@@ -1,0 +1,6 @@
+HTTP Method: post
+Tag: Device State & Tracking
+Summary: Remote Control
+Description: Remotely performs a specified action on the device by sending a push notification to the device.
+Response 200: OK
+Response 400: 

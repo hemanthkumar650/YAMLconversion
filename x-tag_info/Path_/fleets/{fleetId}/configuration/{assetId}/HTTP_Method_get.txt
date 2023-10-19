@@ -1,0 +1,10 @@
+HTTP Method: get
+Tag: SDK Configuration
+Summary: Fetch Asset SDK Configuration
+Description: Returns the package configuration and SDK settings for an individual asset <strong>if the asset is active</strong>.<br> The configuration for the asset's duty type is preferred. If that is unavailable, the configuration for the <em>default</em> duty type is returned.<br> Any settings not available in the fleet configuration are picked from the common configuration (common dutyType1.speedingEnabled is returned when fleet-level dutyType1.speedingEnabled is not set). If both `excludeAssetDetails` and `excludeFleetConfig` are true asset specific configuration will be returned if available.
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Response 200: OK
+Response 400: 
+Response 404: Asset is not active / asset does not exist

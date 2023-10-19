@@ -1,0 +1,9 @@
+HTTP Method: get
+Tag: Face Recognition
+Summary: Fetch Person Details
+Description: 
+Parameter Reference: #/components/parameters/frGroupIdPathParam
+Parameter Reference: #/components/parameters/frPersonIdPathParam
+Response 200: OK
+Response 400: 
+Response 404: Person not enrolled

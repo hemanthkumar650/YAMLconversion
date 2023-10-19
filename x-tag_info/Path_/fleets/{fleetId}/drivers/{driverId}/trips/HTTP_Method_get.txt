@@ -1,0 +1,15 @@
+HTTP Method: get
+Tag: Driver
+Summary: List Driver Trips
+Description: Lists the trips taken by the driver.
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/driverId
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/division
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/customTripParams
+Response 200: OK
+Response 400: 

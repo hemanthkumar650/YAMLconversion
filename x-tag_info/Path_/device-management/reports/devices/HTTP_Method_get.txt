@@ -1,0 +1,8 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: List Devices
+Description: Returns a list of devices with diagnostics info.
+
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK

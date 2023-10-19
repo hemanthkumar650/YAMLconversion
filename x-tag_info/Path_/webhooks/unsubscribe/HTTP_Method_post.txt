@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: Webhook Registration
+Summary: Unsubscribe
+Description: Unsubscribes from webhooks of a specific trigger type.
+Response 200: OK
+Response 400: 
+Response 404: No matching webhook trigger found

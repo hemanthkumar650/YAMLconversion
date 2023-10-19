@@ -1,0 +1,7 @@
+HTTP Method: post
+Tag: DVR
+Summary: Create Archive Request
+Description: Registers an archive request for trip footage.<br> This feature is available with SDK v4.1.0 (APK v1.4.0) and above.
+
+Response 200: OK
+Response 400: 

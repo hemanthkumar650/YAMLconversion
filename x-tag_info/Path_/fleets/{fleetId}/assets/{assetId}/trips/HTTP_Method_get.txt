@@ -1,0 +1,13 @@
+HTTP Method: get
+Tag: Assets
+Summary: List Asset Trips
+Description: Lists the trips taken by the asset
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetId
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
+Response 400: 

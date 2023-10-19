@@ -1,0 +1,7 @@
+HTTP Method: patch
+Tag: User Preferences
+Summary: Update Common User Preferences
+Description: Updates the common user preferences that apply to all fleets unless overridden at fleet or driver level.
+
+Response 200: 
+Response 400: 

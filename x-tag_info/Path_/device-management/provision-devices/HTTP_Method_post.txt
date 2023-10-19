@@ -1,0 +1,10 @@
+HTTP Method: post
+Tag: Provisioning
+Summary: Provision Devices
+Description: Provisions devices to a fleet and creates (or updates) corresponding assets. Assets created via this API will have a <em>partnerHardware&colon; true</em> flag and will be associated with the input device ID.<br><br>
+If any input device ID is already provisioned to the same fleet and asset ID, no changes will be made against it.<br> If any input device ID is already provisioned to the same fleet but a different asset ID, the device ID will be  remapped with the input asset ID and returned in the <em>transfers</em> array in the response.<br> If any input device ID is already provisioned to a different fleet, it will be transferred to the input fleet and it will be returned in the response <em>transfers</em> array.<br><br>
+Any inactive assets specified in the input will be changed to an <em>active</em> state.<br> Asset activation and deactivation via the PATCH Assets API will have no effect on the device ID mapping.
+
+Response 200: 
+Response 202: Accepted. Some device IDs transferred from a different fleet or were not recognized.
+Response 400: 

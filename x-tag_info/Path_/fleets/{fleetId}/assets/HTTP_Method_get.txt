@@ -1,0 +1,17 @@
+HTTP Method: get
+Tag: Assets
+Summary: Fleet Assets List/History
+Description: Returns the list of assets in the input fleet which were active in the input time interval<br> <strong>Note:</strong> The rows in the result might not have unique asset IDs. If an asset's packages were modified, or if it was active during separate intervals with a period of inactivity between them, multiple instances of the same asset will appear in the result.<br> Assets' change history can be inferred using the <em>start</em> and <em>end</em> values in the result
+
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/assetsAfter
+Parameter Reference: #/components/parameters/assetsBefore
+Parameter Reference: #/components/parameters/assetSort
+Parameter Reference: #/components/parameters/assetSortBy
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Parameter Reference: #/components/parameters/bookmark
+Parameter Reference: #/components/parameters/fleetActiveOnly
+Parameter Reference: #/components/parameters/fleetCurrentOnly
+Response 200: OK
+Response 400: 

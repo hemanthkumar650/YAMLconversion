@@ -1,0 +1,12 @@
+HTTP Method: get
+Tag: Device State & Tracking
+Summary: List Device Trips
+Description: Lists the trips taken by the device
+Parameter Reference: #/components/parameters/fleetId
+Parameter Reference: #/components/parameters/deviceId
+Parameter Reference: #/components/parameters/before
+Parameter Reference: #/components/parameters/after
+Parameter Reference: #/components/parameters/sort
+Parameter Reference: #/components/parameters/limit
+Parameter Reference: #/components/parameters/skip
+Response 200: OK
