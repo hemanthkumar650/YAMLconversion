@@ -1,3 +1,4 @@
+API Path: /live/fleets/{fleetId}/streams/{streamRequestId}
 HTTP Method: get
 Tag: Livestreaming
 Summary: Stream Details

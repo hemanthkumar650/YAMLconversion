@@ -1,3 +1,4 @@
+API Path: /device-management/software/softwareIds
 HTTP Method: get
 Tag: Software Updates
 Summary: List Software Channels

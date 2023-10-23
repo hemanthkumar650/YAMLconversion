@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/drivers/{driverId}/trips/{tripId}/uploadRequests/{uploadRequestId}
 HTTP Method: get
 Tag: DVR
 Summary: Fetch Upload Request Details

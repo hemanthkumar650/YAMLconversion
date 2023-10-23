@@ -1,3 +1,4 @@
+API Path: /event-stream/common/reset-position
 HTTP Method: post
 Tag: Live Telematics
 Summary: Reset Cursor Position

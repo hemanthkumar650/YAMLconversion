@@ -1,3 +1,4 @@
+API Path: /user-preferences/fleets/{fleetId}
 HTTP Method: get
 Tag: User Preferences
 Summary: Fetch Fleet Preferences

@@ -1,3 +1,4 @@
+API Path: /live/fleets/{fleetId}/usage/{deviceId}
 HTTP Method: get
 Tag: Livestreaming
 Summary: Usage (Device Level)

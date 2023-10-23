@@ -1,3 +1,4 @@
+API Path: /trip-fr-feedback
 HTTP Method: post
 Tag: Trip
 Summary: Trip FR Feedback

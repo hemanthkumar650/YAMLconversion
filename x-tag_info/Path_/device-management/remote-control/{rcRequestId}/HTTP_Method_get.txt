@@ -1,3 +1,4 @@
+API Path: /device-management/remote-control/{rcRequestId}
 HTTP Method: get
 Tag: Device State & Tracking
 Summary: Remote Control Status

@@ -1,3 +1,4 @@
+API Path: /device-management/devices/{deviceId}/tasks
 HTTP Method: get
 Tag: Device State & Tracking
 Summary: Device Task Status

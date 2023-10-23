@@ -1,3 +1,4 @@
+API Path: /user-preferences/fleets/{fleetId}/drivers/{driverId}
 HTTP Method: get
 Tag: User Preferences
 Summary: Fetch Driver Preferences

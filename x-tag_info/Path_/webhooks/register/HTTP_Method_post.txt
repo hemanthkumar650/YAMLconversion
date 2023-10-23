@@ -1,3 +1,4 @@
+API Path: /webhooks/register
 HTTP Method: post
 Tag: Webhook Registration
 Summary: Register Webhook

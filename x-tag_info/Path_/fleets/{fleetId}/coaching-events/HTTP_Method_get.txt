@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/coaching-events
 HTTP Method: get
 Tag: Fleet
 Summary: Coaching Event List

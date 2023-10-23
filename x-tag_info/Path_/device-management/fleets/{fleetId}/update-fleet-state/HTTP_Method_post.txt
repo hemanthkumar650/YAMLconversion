@@ -1,3 +1,4 @@
+API Path: /device-management/fleets/{fleetId}/update-fleet-state
 HTTP Method: post
 Tag: Provisioning
 Summary: Update Fleet State

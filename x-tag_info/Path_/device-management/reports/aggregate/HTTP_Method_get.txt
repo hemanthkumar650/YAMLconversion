@@ -1,3 +1,4 @@
+API Path: /device-management/reports/aggregate
 HTTP Method: get
 Tag: Device State & Tracking
 Summary: Aggregate Device Reports

@@ -1,3 +1,4 @@
+API Path: /device-management/devices/{deviceId}/dvr-image-upload-request/{uploadRequestId}
 HTTP Method: get
 Tag: DVR
 Summary: DVR Image Details

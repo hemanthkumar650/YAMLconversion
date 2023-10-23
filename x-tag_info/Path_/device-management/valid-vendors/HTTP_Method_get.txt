@@ -1,3 +1,4 @@
+API Path: /device-management/valid-vendors
 HTTP Method: get
 Tag: Provisioning
 Summary: List Valid Vendors

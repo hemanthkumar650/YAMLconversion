@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/latest-trips-by-asset-id
 HTTP Method: get
 Tag: Fleet
 Summary: List Fleet Latest Trips

@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/assets/{assetId}/trips
 HTTP Method: get
 Tag: Assets
 Summary: List Asset Trips

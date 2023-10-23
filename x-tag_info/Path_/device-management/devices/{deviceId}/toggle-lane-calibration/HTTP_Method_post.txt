@@ -1,3 +1,4 @@
+API Path: /device-management/devices/{deviceId}/toggle-lane-calibration
 HTTP Method: post
 Tag: Device State & Tracking
 Summary: Toggle Lane Calibration

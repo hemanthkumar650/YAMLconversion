@@ -1,3 +1,4 @@
+API Path: /live/stop-stream
 HTTP Method: post
 Tag: Livestreaming
 Summary: Stop Stream

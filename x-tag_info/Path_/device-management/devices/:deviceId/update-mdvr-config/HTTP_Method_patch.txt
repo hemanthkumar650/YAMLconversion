@@ -1,3 +1,4 @@
+API Path: /device-management/devices/:deviceId/update-mdvr-config
 HTTP Method: patch
 Tag: Provisioning
 Summary: Update MDVR Configuration

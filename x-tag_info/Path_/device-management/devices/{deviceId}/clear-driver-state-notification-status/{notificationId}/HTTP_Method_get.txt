@@ -1,3 +1,4 @@
+API Path: /device-management/devices/{deviceId}/clear-driver-state-notification-status/{notificationId}
 HTTP Method: get
 Tag: Device State & Tracking
 Summary: Clear Driver State Request Details

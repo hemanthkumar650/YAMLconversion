@@ -1,3 +1,4 @@
+API Path: /webhooks/unsubscribe
 HTTP Method: post
 Tag: Webhook Registration
 Summary: Unsubscribe

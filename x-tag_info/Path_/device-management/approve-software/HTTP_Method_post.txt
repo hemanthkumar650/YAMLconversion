@@ -1,3 +1,4 @@
+API Path: /device-management/approve-software
 HTTP Method: post
 Tag: Software Updates
 Summary: Approve Software

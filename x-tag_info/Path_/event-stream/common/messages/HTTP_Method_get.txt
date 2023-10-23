@@ -1,3 +1,4 @@
+API Path: /event-stream/common/messages
 HTTP Method: get
 Tag: Live Telematics
 Summary: Fetch Messages

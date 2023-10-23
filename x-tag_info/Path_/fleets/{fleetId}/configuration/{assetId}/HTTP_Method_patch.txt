@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/configuration/{assetId}
 HTTP Method: patch
 Tag: SDK Configuration
 Summary: Update Asset SDK Configuration

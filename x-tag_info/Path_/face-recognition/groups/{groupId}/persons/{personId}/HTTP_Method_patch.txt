@@ -1,3 +1,4 @@
+API Path: /face-recognition/groups/{groupId}/persons/{personId}
 HTTP Method: patch
 Tag: Face Recognition
 Summary: Modify Person Details

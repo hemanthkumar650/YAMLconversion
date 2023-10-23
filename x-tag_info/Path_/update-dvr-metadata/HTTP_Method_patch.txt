@@ -1,3 +1,4 @@
+API Path: /update-dvr-metadata
 HTTP Method: patch
 Tag: DVR
 Summary: Update upload request metadata

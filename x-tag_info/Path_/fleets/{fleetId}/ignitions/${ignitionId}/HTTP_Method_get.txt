@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/ignitions/${ignitionId}
 HTTP Method: get
 Tag: Fleet
 Summary: Fetch Ignition details

@@ -1,3 +1,4 @@
+API Path: /device-management/provision-devices
 HTTP Method: post
 Tag: Provisioning
 Summary: Provision Devices

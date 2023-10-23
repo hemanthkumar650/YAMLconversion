@@ -1,3 +1,4 @@
+API Path: /update-event-metadata
 HTTP Method: patch
 Tag: Trip
 Summary: Update event metadata

@@ -1,3 +1,4 @@
+API Path: /dvr/create-event-video-upload-request
 HTTP Method: post
 Tag: DVR
 Summary: Create Event Video Upload Request

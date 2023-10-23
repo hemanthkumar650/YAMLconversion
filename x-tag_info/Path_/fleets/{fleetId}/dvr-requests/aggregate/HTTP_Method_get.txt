@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/dvr-requests/aggregate
 HTTP Method: get
 Tag: Fleet
 Summary: Aggregate DVR Requests

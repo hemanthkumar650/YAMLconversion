@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/assets
 HTTP Method: get
 Tag: Assets
 Summary: Fleet Assets List/History

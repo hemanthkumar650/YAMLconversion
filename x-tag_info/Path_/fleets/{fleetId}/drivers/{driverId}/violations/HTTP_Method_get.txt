@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/drivers/{driverId}/violations
 HTTP Method: get
 Tag: Driver
 Summary: List Driver Violations

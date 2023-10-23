@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/violations/aggregate
 HTTP Method: get
 Tag: Fleet
 Summary: Aggregate Fleet Violations

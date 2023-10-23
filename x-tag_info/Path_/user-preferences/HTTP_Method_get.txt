@@ -1,3 +1,4 @@
+API Path: /user-preferences
 HTTP Method: get
 Tag: User Preferences
 Summary: Fetch Common User Preferences

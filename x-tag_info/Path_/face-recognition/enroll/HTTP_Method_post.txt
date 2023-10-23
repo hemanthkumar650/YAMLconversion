@@ -1,3 +1,4 @@
+API Path: /face-recognition/enroll
 HTTP Method: post
 Tag: Face Recognition
 Summary: Enroll Person

@@ -1,3 +1,4 @@
+API Path: /dvr/create-upload-request
 HTTP Method: post
 Tag: DVR
 Summary: Create Upload Request

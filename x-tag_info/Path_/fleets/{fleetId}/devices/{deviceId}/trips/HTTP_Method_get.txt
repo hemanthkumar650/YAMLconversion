@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/devices/{deviceId}/trips
 HTTP Method: get
 Tag: Device State & Tracking
 Summary: List Device Trips

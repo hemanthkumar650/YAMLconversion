@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/drivers/{driverId}/trips/{tripId}
 HTTP Method: get
 Tag: Trip
 Summary: Fetch Trip Details

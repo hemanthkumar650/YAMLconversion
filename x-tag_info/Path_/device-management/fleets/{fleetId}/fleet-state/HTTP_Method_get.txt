@@ -1,3 +1,4 @@
+API Path: /device-management/fleets/{fleetId}/fleet-state
 HTTP Method: get
 Tag: Provisioning
 Summary: Fleet State History

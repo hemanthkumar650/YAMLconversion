@@ -1,3 +1,4 @@
+API Path: /live/create-stream-request
 HTTP Method: post
 Tag: Livestreaming
 Summary: Request Livestream

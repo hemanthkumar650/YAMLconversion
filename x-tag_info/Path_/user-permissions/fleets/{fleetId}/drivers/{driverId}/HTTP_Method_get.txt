@@ -1,3 +1,4 @@
+API Path: /user-permissions/fleets/{fleetId}/drivers/{driverId}
 HTTP Method: get
 Tag: User Permissions
 Summary: Fetch Driver Permissions

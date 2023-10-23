@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/drivers
 HTTP Method: get
 Tag: Fleet
 Summary: List Fleet Drivers

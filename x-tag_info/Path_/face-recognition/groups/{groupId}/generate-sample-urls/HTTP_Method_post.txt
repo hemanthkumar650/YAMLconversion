@@ -1,3 +1,4 @@
+API Path: /face-recognition/groups/{groupId}/generate-sample-urls
 HTTP Method: post
 Tag: Face Recognition
 Summary: Generate Sample URLs

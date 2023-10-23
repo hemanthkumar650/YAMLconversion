@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/ongoing-trips
 HTTP Method: get
 Tag: Fleet
 Summary: List Fleet Ongoing Trips

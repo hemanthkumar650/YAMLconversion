@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}
 HTTP Method: get
 Tag: Fleet
 Summary: Fleet Details

@@ -1,3 +1,4 @@
+API Path: /fleets/{fleetId}/configuration
 HTTP Method: put
 Tag: SDK Configuration
 Summary: Overwrite Fleet SDK Configuration

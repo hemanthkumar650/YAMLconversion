@@ -1,3 +1,4 @@
+API Path: /face-recognition/groups/{groupId}/persons
 HTTP Method: get
 Tag: Face Recognition
 Summary: List Group Persons

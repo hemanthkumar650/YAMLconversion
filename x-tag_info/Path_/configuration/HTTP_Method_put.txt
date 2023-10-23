@@ -1,3 +1,4 @@
+API Path: /configuration
 HTTP Method: put
 Tag: SDK Configuration
 Summary: Overwrite Common SDK Configuration

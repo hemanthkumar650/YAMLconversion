@@ -2,22 +2,15 @@ import os
 import yaml
 
 def generate_api_suggestions(openapi_data, output_dir):
-    security = openapi_data.get("security", [])
-    for security_item in security:
-        for security_key, security_value in security_item.items():
-            security_file_path = os.path.join(output_dir, f"Security_{security_key}.txt")
-            with open(security_file_path, 'w') as security_file:
-                security_file.write(f"Security: {security_key}\n")
-                if isinstance(security_value, list):
-                    security_file.writelines([f"- {item}\n" for item in security_value])
-
     paths = openapi_data.get("paths", {})
     for path, path_info in paths.items():
+        sanitized_path = path.replace("/", "_").replace("{", "_").replace("}", "_")
         path_dir = os.path.join(output_dir, f"Path_{path}")
         os.makedirs(path_dir, exist_ok=True)
         for http_method, method_info in path_info.items():
             method_file_path = os.path.join(path_dir, f"HTTP_Method_{http_method}.txt")
             with open(method_file_path, 'w') as method_file:
+                method_file.write(f"API Path: {path}\n")
                 method_file.write(f"HTTP Method: {http_method}\n")
                 tags = method_info.get("tags", [])
                 method_file.writelines([f"Tag: {tag}\n" for tag in tags])
@@ -57,8 +50,8 @@ def process_openapi_yaml(yaml_file, output_dir):
         print(f"An error occurred: {e}")
         return None
 
-input_yaml_file = '/home/hemanth/Desktop/YAMLconversion/api-docs-v1-external(1).yaml'
-output_directory = '/home/hemanth/Desktop/YAMLconversion/x-tag_info'
+input_yaml_file = '/api-docs-v1-external(1).yaml'
+output_directory = '/x-tag_info'
 
 result = process_openapi_yaml(input_yaml_file, output_directory)
 

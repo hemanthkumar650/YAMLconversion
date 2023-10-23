@@ -1,3 +1,4 @@
+API Path: /device-management/devices/{deviceId}
 HTTP Method: get
 Tag: Provisioning
 Summary: Device Details
