@@ -4,4 +4,9 @@ Tag: Device State & Tracking
 Summary: Clear Driver State
 Description: Remotely clears saved driver state (driver ID and driver name) from the specified device
 Parameter Reference: #/components/parameters/deviceId
-Response 200: OK
+Request Body Schema:
+  Type: object
+  Properties:
+    matchDriverId:
+      Type: string
+      Description: If provided in the input, driver state will only be cleared from the device if the saved driver ID matches this value.

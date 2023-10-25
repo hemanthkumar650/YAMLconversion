@@ -6,5 +6,3 @@ Description: Returns fleet-level user preferences that apply to all drivers in t
 
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/UPIncludeDefaults
-Response 200: OK
-Response 400: 

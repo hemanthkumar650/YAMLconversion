@@ -7,5 +7,3 @@ Description: Returns history log of fleet state changes.<br> If the most recent 
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
-Response 200: OK
-Response 400: 

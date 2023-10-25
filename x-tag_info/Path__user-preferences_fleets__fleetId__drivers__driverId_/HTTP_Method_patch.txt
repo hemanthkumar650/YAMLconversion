@@ -6,5 +6,3 @@ Description: Updates driver-level user preferences
 
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/driverId
-Response 200: 
-Response 400: 

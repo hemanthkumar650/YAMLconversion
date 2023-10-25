@@ -13,5 +13,3 @@ Parameter Reference: #/components/parameters/skip
 Parameter Reference: #/components/parameters/assetSort
 Parameter Reference: #/components/parameters/assetSortBy
 Parameter Reference: #/components/parameters/bookmark
-Response 200: 
-Response 400: 

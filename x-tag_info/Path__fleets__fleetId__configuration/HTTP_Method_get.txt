@@ -5,5 +5,3 @@ Summary: Fetch Fleet SDK Configuration
 Description: Returns the fleet's SDK configuration<br> If the 'excludeCommonConfig' parameter is <strong>true</strong>, response only includes settings defined at fleet-level<br> If the 'excludeCommonConfig' parameter is <strong>false</strong>, response includes settings 'inherited' from the common configuration
 
 Parameter Reference: #/components/parameters/fleetId
-Response 200: OK
-Response 400: 

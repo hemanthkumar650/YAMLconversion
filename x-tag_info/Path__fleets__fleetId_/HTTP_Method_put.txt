@@ -4,6 +4,3 @@ Tag: Fleet
 Summary: Create Fleet
 Description: Returns the created fleet
 Parameter Reference: #/components/parameters/fleetId
-Response 201: OK
-Response 400: 
-Response 409: The fleetId already exist

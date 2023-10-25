@@ -5,6 +5,3 @@ Summary: Clear Driver State Request Details
 Description: Detail of the clear driver state request
 Parameter Reference: #/components/parameters/deviceId
 Parameter Reference: #/components/parameters/notificationId
-Response 200: OK
-Response 400: 
-Response 404: Clear driver state request not found

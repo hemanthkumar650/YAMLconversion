@@ -4,6 +4,15 @@ Tag: Livestreaming
 Summary: Review Livestream
 Description: Generates a new livestreaming session URL on an existing (ongoing or finished) stream.<br> Calling this API will increment the view count on the requested livestream by one.<br> Note&colon; Livestreams <strong>cannot</strong> be reviewed 24 hrs after their creation.
 
-Response 200: OK
-Response 400: 
-Response 404: 
+Request Body Schema:
+  Type: object
+  Required:
+    - fleetId
+    - streamRequestId
+  Properties:
+    fleetId:
+      Type: 
+      Description: 
+    streamRequestId:
+      Type: 
+      Description: 

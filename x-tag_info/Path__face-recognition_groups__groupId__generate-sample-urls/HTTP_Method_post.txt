@@ -4,5 +4,11 @@ Tag: Face Recognition
 Summary: Generate Sample URLs
 Description: Generates sample URLs and corresponding sample IDs for uploading driver images.
 Parameter Reference: #/components/parameters/frGroupIdPathParam
-Response 200: OK
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - groupId
+  Properties:
+    groupId:
+      Type: 
+      Description: 

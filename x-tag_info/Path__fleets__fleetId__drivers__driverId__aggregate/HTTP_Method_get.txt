@@ -12,5 +12,3 @@ Parameter Reference: #/components/parameters/before
 Parameter Reference: #/components/parameters/division
 Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
-Response 200: 
-Response 400: 

@@ -10,4 +10,3 @@ Parameter Reference: #/components/parameters/after
 Parameter Reference: #/components/parameters/sort
 Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
-Response 200: OK

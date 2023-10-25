@@ -5,5 +5,3 @@ Summary: Fetch Common User Preferences
 Description: Returns the common user preferences that apply to all fleets unless overridden at fleet or driver level
 
 Parameter Reference: #/components/parameters/UPIncludeDefaults
-Response 200: OK
-Response 400: 

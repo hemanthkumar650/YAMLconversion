@@ -4,6 +4,26 @@ Tag: Provisioning
 Summary: Deprovision Devices
 Description: Removes any fleet or asset associations on input devices.<br>
 
-Response 200: Success
-Response 202: Accepted. Some device IDs were not recognized.
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - fleetId
+    - devices
+    - vendorId
+  Properties:
+    fleetId:
+      Type: 
+      Description: 
+    vendorId:
+      Type: 
+      Description: 
+    deactivateOriginalAssets:
+      Type: 
+      Description: 
+    devices:
+      Type: array
+      Description: List of devices to be deprovisioned
+    retainFleetId:
+      Type: boolean
+      Description: If true fleetId will be retained for the input devices after deprovisioning.
+

@@ -6,5 +6,3 @@ Description: Lists the unprovisioned devices communicating with the API servers.
 
 Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
-Response 200: OK
-Response 400: 

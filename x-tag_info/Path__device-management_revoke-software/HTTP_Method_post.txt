@@ -3,6 +3,26 @@ HTTP Method: post
 Tag: Software Updates
 Summary: Revoke Approved Sofwtare
 Description: Revokes already approved software globally or for individual devices.
-Response 200: 
-Response 400: 
-Response 406: Globally approved software version cannot be revoked for individual devices.
+Request Body Schema:
+  Type: object
+  Required:
+    - softwareId
+    - semver
+    - deviceModel
+  Properties:
+    softwareId:
+      Type: 
+      Description: 
+    semver:
+      Type: string
+      Description: The software version to revoke.
+    deviceModel:
+      Type: 
+      Description: 
+    global:
+      Type: boolean
+      Description: If <strong>true</strong> then the software version will no longer be available to any device.
+    devices:
+      Type: array
+      Description: List of device IDs to revoke the already approved software.<br> This parameter will be ignored when <em>global</em> is <strong>true</strong>.<br> <strong>Note:</strong> Software version cannot be revoked if it is already approved globally.
+

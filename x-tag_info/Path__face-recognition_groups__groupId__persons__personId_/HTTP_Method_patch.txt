@@ -5,7 +5,3 @@ Summary: Modify Person Details
 Description: Modifies samples and metadata corresponding to input person ID
 Parameter Reference: #/components/parameters/frGroupIdPathParam
 Parameter Reference: #/components/parameters/frPersonIdPathParam
-Response 200: 
-Response 409: Media samples too similar to different previously enrolled person
-Response 400: 
-Response 404: Sample(s) not found / person not enrolled

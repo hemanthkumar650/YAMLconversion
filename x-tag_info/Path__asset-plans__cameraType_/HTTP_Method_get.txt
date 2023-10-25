@@ -4,5 +4,3 @@ Tag: Assets
 Summary: Asset Plans
 Description: Returns all the eligible plans for a given camera type.
 
-Response 200: OK
-Response 400: 

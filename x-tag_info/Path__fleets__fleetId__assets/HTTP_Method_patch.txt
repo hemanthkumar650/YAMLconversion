@@ -5,5 +5,3 @@ Summary: Patch Fleet Assets
 Description: Updates the assets specified in the input list<br> <strong>Only the fields which were specified in the request body will be updated (<em>tags</em> and <em>metadata</em> values are completely replaced if specified in the input)</strong><br> If an input asset (identified by <em>assetId</em>)  is not already registered, a new entry will be added<br> To deactivate assets set 'active' to false against their assetIds<br> If <em>active</em> is set to false in the input against an already inactive assetId, its fields will not be updated<br> This API can be used to update individual assets<br>
 
 Parameter Reference: #/components/parameters/fleetId
-Response 200: The update was partially/fully successful
-Response 400: 

@@ -4,7 +4,19 @@ Tag: Face Recognition
 Summary: Enroll Person
 Description: Enrolls a new person to a group using input media samples.<br> Call this API <strong>after</strong> uploading driver images to the URLs generated using the POST Generate Sample URLs API.
 
-Response 200: OK
-Response 400: Invalid input / bad samples
-Response 404: Sample(s) not found
-Response 409: Media samples too similar to previously enrolled person
+Request Body Schema:
+  Type: object
+  Required:
+    - sampleIds
+    - groupId
+  Properties:
+    sampleIds:
+      Type: array
+      Description: List of sample IDs corresponding to media samples of the person<br> <strong>Note: Input samples cannot be used for enrolling/modifying another person's data</strong>
+
+    groupId:
+      Type: 
+      Description: 
+    metadata:
+      Type: 
+      Description: 

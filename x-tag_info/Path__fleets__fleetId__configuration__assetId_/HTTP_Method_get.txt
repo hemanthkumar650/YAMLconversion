@@ -6,6 +6,3 @@ Description: Returns the package configuration and SDK settings for an individua
 
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/assetId
-Response 200: OK
-Response 400: 
-Response 404: Asset is not active / asset does not exist

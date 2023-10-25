@@ -5,5 +5,3 @@ Summary: List Fleets
 Description: Returns list of fleets sorted lexicographically
 Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
-Response 200: OK
-Response 400: 

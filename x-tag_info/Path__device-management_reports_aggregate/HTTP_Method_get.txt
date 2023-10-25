@@ -4,4 +4,3 @@ Tag: Device State & Tracking
 Summary: Aggregate Device Reports
 Description: Aggregates the device reports.
 
-Response 200: OK

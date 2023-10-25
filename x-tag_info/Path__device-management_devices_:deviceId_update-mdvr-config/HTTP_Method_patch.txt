@@ -4,4 +4,3 @@ Tag: Provisioning
 Summary: Update MDVR Configuration
 Description: Updates the MDVR configuration for a device.<br> The MDVR feature is not supported in all the device-models. Please contact Lightmetrics for more information.
 
-Response 200: 

@@ -22,21 +22,30 @@ def generate_api_suggestions(openapi_data, output_dir):
                 for param in parameters:
                     ref = param.get("$ref", "")
                     if ref:
-                        method_file.write(f"Parameter Reference: {ref}\n")
-                responses = method_info.get("responses", {})
-                for response_code, response_info in responses.items():
-                    description = response_info.get("description", "")
-                    method_file.write(f"Response {response_code}: {description}\n")
-
+                        method_file.write(f"Parameter Reference: {ref}\n")             
                 if http_method == "post":
                     request_body = method_info.get("requestBody", {})
                     if request_body:
                         content = request_body.get("content", {})
                         for content_type, content_info in content.items():
-                            schema_ref = content_info.get("schema", {}).get("$ref", "")
-                            if schema_ref:
-                                method_file.write(f"Request Body Schema Reference: {schema_ref}\n")
-
+                            schema = content_info.get("schema", {})
+                            if schema:
+                                method_file.write("Request Body Schema:\n")
+                                method_file.write(f"  Type: {schema.get('type', '')}\n")
+                                required = schema.get('required', [])
+                                if required:
+                                    method_file.write("  Required:\n")
+                                    method_file.writelines([f"    - {req}\n" for req in required])
+                                properties = schema.get('properties', {})
+                                if properties:
+                                    method_file.write("  Properties:\n")
+                                    for prop, prop_info in properties.items():
+                                        prop_type = prop_info.get('type', '')
+                                        prop_description = prop_info.get('description', '')
+                                        method_file.write(f"    {prop}:\n")
+                                        method_file.write(f"      Type: {prop_type}\n")
+                                        method_file.write(f"      Description: {prop_description}\n")
+                
 def create_entry_text_files(yaml_data, output_dir):
     try:
         os.makedirs(output_dir, exist_ok=True)

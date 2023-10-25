@@ -5,5 +5,9 @@ Summary: Trigger Device Task
 Description: Triggers the specified device task.
 
 Parameter Reference: #/components/parameters/deviceId
-Response 200: 
-Response 400: 
+Request Body Schema:
+  Type: 
+  Required:
+    - taskType
+    - temporaryTripBlocking
+    - temporaryTripBlockingEndTimestamp

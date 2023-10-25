@@ -4,5 +4,3 @@ Tag: SDK Configuration
 Summary: Overwrite Common SDK Configuration
 Description: Replaces the common SDK configuration with the input value<br>
 
-Response 200: 
-Response 400: 

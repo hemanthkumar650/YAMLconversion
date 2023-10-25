@@ -5,5 +5,14 @@ Summary: Toggle Device OutPin Signal
 Description: Toggles the device outpin signal. <strong>Note:</strong> Available for APK version 1.9.0 and above.
 
 Parameter Reference: #/components/parameters/deviceId
-Response 200: OK
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - deviceOutPinSignal
+  Properties:
+    deviceOutPinSignal:
+      Type: 
+      Description: 
+    toggleConfiguration:
+      Type: 
+      Description: 

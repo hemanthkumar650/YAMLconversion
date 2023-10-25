@@ -3,7 +3,32 @@ HTTP Method: post
 Tag: Software Updates
 Summary: Approve Software
 Description: Sign off on a software version, making it available to devices to download.
-Response 200: 
-Response 202: Accepted. Some input device IDs were unrecognized.
-Response 400: 
-Response 404: Not found
+Request Body Schema:
+  Type: object
+  Required:
+    - softwareId
+    - semver
+    - deviceModel
+  Properties:
+    softwareId:
+      Type: 
+      Description: 
+    semver:
+      Type: string
+      Description: The software version to approve.
+    deviceModel:
+      Type: 
+      Description: 
+    global:
+      Type: boolean
+      Description: If <strong>true</strong> then the software version will be available to <strong>all</strong> devices
+    devices:
+      Type: array
+      Description: List of device IDs to be allowed to download the software version.<br> This parameter will be ignored when <em>global</em> is <strong>true</strong>.
+
+    immediateUpdate:
+      Type: 
+      Description: 
+    allowFullInstall:
+      Type: 
+      Description: 

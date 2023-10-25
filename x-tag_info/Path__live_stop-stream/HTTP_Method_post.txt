@@ -4,7 +4,15 @@ Tag: Livestreaming
 Summary: Stop Stream
 Description: Sends a notification to the device to stop video stream upload.
 
-Response 200: 
-Response 400: 
-Response 404: 
-Response 406: 
+Request Body Schema:
+  Type: object
+  Required:
+    - fleetId
+    - streamRequestId
+  Properties:
+    fleetId:
+      Type: 
+      Description: 
+    streamRequestId:
+      Type: 
+      Description: 

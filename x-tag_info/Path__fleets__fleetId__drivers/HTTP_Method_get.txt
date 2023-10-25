@@ -8,5 +8,3 @@ Parameter Reference: #/components/parameters/dutyType
 Parameter Reference: #/components/parameters/before
 Parameter Reference: #/components/parameters/after
 Parameter Reference: #/components/parameters/division
-Response 200: OK
-Response 400: 

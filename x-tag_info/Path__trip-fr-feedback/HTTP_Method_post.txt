@@ -3,6 +3,19 @@ HTTP Method: post
 Tag: Trip
 Summary: Trip FR Feedback
 Description: Submit feedback on the trip's automatic face recognition
-Response 200: OK
-Response 400: 
-Response 404: No trip was found matching the input tripId
+Request Body Schema:
+  Type: object
+  Required:
+    - tripId
+    - frFeedbackSuggestedPersonId
+  Properties:
+    tripId:
+      Type: string
+      Description: Trip Identifier<br>
+
+    frFeedbackSuggestedPersonId:
+      Type: 
+      Description: 
+    frFeedbackPersonNotEnrolled:
+      Type: 
+      Description: 

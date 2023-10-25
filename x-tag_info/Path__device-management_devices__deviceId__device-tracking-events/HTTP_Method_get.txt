@@ -9,5 +9,3 @@ Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/skip
 Parameter Reference: #/components/parameters/deviceEventsBefore
 Parameter Reference: #/components/parameters/deviceEventsAfter
-Response 200: OK
-Response 400: 

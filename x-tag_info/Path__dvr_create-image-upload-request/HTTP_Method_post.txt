@@ -6,6 +6,5 @@ Description: Registers an image upload request for trip footage<br> One of <stro
 <strong>Note:</strong> Starting from APK version 1.7.0, "oldestDvrTimestamp" is available via <a href="/docs/device#tag/Device-State-and-Tracking/paths/~1device-management~1devices~1{deviceId}~1device-tracking-events/get">Device-Tracking-Events API</a> under the "Device-Storage" event type. Input captureTimeUTC must be greater than the oldestDvrTimestamp of the device, if available. This is to fail fast when the requested time range is not serviceable and avoid delayed `UNAVAILABLE` failures.<br><br>
 <strong>Note:</strong> Starting from APK version 1.14.0, collage based DVR is supported.<br>
 
-Response 200: OK
-Response 400: 
-Response 404: The trip does not exist or the trip does not have a valid notificationToken.
+Request Body Schema:
+  Type: 

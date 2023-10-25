@@ -5,5 +5,3 @@ Summary: Update Fleet Preferences
 Description: Updates fleet-level user preferences that apply to all drivers in the fleet unless overridden at driver level
 
 Parameter Reference: #/components/parameters/fleetId
-Response 200: 
-Response 400: 

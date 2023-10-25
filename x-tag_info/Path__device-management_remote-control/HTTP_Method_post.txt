@@ -3,5 +3,19 @@ HTTP Method: post
 Tag: Device State & Tracking
 Summary: Remote Control
 Description: Remotely performs a specified action on the device by sending a push notification to the device.
-Response 200: OK
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - action
+    - deviceId
+    - sdCardNumber
+  Properties:
+    action:
+      Type: 
+      Description: 
+    deviceId:
+      Type: 
+      Description: 
+    sdCardNumber:
+      Type: 
+      Description: 

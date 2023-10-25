@@ -4,5 +4,3 @@ Tag: Provisioning
 Summary: Aggregate Devices
 Description: Aggregates the registered devices
 Parameter Reference: #/components/parameters/semiProvisioned
-Response 200: OK
-Response 400: 

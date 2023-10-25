@@ -12,5 +12,3 @@ Parameter Reference: #/components/parameters/after
 Parameter Reference: #/components/parameters/sort
 Parameter Reference: #/components/parameters/skip
 Parameter Reference: #/components/parameters/limit
-Response 200: 
-Response 400: 

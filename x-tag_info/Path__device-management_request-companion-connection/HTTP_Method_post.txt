@@ -4,6 +4,14 @@ Tag: Device State & Tracking
 Summary: Request Companion Connection
 Description: Returns signedToken along with expiry based on the input.
 
-Response 200: OK
-Response 400: 
-Response 404: 
+Request Body Schema:
+  Type: object
+  Required:
+    - deviceId
+  Properties:
+    deviceId:
+      Type: 
+      Description: 
+    fleetId:
+      Type: 
+      Description: 

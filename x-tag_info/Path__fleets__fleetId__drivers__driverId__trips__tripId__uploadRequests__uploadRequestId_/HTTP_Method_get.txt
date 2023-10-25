@@ -6,6 +6,3 @@ Description: Returns the details of the upload request identified by input trip 
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/driverId
 Parameter Reference: #/components/parameters/tripId
-Response 200: OK
-Response 400: 
-Response 404: No upload request was found matching the input fleetId, driverId, tripId and uploadRequestId combination

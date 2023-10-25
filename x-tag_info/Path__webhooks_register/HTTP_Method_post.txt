@@ -4,5 +4,20 @@ Tag: Webhook Registration
 Summary: Register Webhook
 Description: Saves a webhook URL that will be notified about specific events like DVR uploads and event video uploads<br> Only one webhook per event type will be recorded, which will be replaced upon calling the API with the same 'trigger' input<br> <strong>Note: Updates may take up to 5 minutes to be processed</strong>
 
-Response 200: 
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - trigger
+    - url
+  Properties:
+    trigger:
+      Type: 
+      Description: 
+    url:
+      Type: string
+      Description: The webhook URL<br> The URL must use https and <strong>must not</strong> contain any sensitive information such as API credentials<br>
+
+    authorization:
+      Type: string
+      Description: If specified, the value will be sent as the authorization header in the webhook call.<br> <strong>If unspecified, any previously stored value on the same event webhook will be retained</strong>. An explicitly <strong>null</strong> value in the input will replace any previously stored value.<br> The value is encrypted before storage and will not be accessible via the GET /webhooks API.<br>
+

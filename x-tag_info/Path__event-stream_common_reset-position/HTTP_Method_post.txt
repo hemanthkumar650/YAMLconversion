@@ -4,5 +4,3 @@ Tag: Live Telematics
 Summary: Reset Cursor Position
 Description: Changes the reading position to a different position in the message queue.<br> One of <em>postition</em> and <em>timestamp</em> must be specified in the input
 
-Response 200: 
-Response 400: 

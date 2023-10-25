@@ -8,5 +8,3 @@ Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/assetId
 Parameter Reference: #/components/parameters/beforeViolations
 Parameter Reference: #/components/parameters/afterViolations
-Response 200: OK
-Response 400: 

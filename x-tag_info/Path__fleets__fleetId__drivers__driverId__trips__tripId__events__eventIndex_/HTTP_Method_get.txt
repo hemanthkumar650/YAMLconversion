@@ -6,6 +6,3 @@ Description: Returns the details of the event identified by input trip ID and ev
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/driverId
 Parameter Reference: #/components/parameters/tripId
-Response 200: OK
-Response 400: 
-Response 404: No event was found matching the input fleetId, driverId, tripId and eventIndex combination

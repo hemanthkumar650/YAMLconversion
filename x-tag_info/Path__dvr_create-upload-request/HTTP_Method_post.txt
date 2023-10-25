@@ -7,7 +7,5 @@ Description: Registers an upload request for trip footage<br> One of <strong>dri
 <br/> <strong>Note:</strong> Video-duration is determined by the start and stop time provided in the DVR request. For a time-lapse of entire trip, the video-duration is the trip-duration. <br/><br/> <strong>Note:</strong>The data size of the time-lapse video scales directly with the capture-interval. Display interval has no bearing on the final video size. However it governs the time-lapse video duration. <br/><br/> <strong>Note:</strong> Starting from APK version 1.7.0, "oldestDvrTimestamp" is available via <a href="/docs/device#tag/Device-State-and-Tracking/paths/~1device-management~1devices~1{deviceId}~1device-tracking-events/get">Device-Tracking-Events API</a> under the "Device-Storage" event type. Input startTimeUTC must be greater than the oldestDvrTimestamp of the device, if available. This is to fail fast when the requested time range is not serviceable and avoid delayed `UNAVAILABLE` failures.<br><br>
 <strong>Note:</strong> Starting from APK version 1.14.0, collage based DVR is supported.<br>
 
-Response 200: OK
-Response 400: 
-Response 404: The trip does not exist or the trip does not have a valid notificationToken.
-Response 406: Unsupported operation/input
+Request Body Schema:
+  Type: 

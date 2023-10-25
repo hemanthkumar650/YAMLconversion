@@ -5,5 +5,3 @@ Summary: Fetch Fleet Permissions
 Description: Returns fleet-level user permissions that apply to all drivers in the fleet unless overridden at driver level
 
 Parameter Reference: #/components/parameters/fleetId
-Response 200: OK
-Response 400: 

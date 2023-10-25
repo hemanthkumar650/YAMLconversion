@@ -3,5 +3,3 @@ HTTP Method: get
 Tag: Webhook Registration
 Summary: List Webhooks
 Description: Returns a list of registered webhooks
-Response 200: OK
-Response 400: 

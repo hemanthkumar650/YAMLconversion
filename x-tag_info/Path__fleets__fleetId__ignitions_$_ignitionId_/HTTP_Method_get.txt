@@ -5,6 +5,3 @@ Summary: Fetch Ignition details
 Description: Returns details of an Ignition on-off period by ignition ID
 Parameter Reference: #/components/parameters/fleetId
 Parameter Reference: #/components/parameters/ignitionId
-Response 200: OK
-Response 400: 
-Response 404: Could not find matching ignition record

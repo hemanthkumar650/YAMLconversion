@@ -5,5 +5,11 @@ Summary: Toggle Lane Calibration
 Description: Toggles the lane calibration.  <strong>Note:</strong> Available for APK version 1.9.0 and above.
 
 Parameter Reference: #/components/parameters/deviceId
-Response 200: 
-Response 400: 
+Request Body Schema:
+  Type: object
+  Required:
+    - laneCalibration
+  Properties:
+    laneCalibration:
+      Type: 
+      Description: 

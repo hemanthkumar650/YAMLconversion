@@ -4,5 +4,3 @@ Tag: SDK Configuration
 Summary: Update Common SDK Configuration
 Description: Updates the common SDK configuration with the input<br> Individual settings (such as speedingEnabled) specified in the input will replace existing settings(if any)<br> Existing settings for which a new value is not specified in the input will remain unchanged<br> Settings <em>explicitly</em> set to <strong>null</strong> in the input will be assigned system default values
 
-Response 200: OK
-Response 400: 

@@ -14,5 +14,3 @@ Parameter Reference: #/components/parameters/skip
 Parameter Reference: #/components/parameters/bookmark
 Parameter Reference: #/components/parameters/fleetActiveOnly
 Parameter Reference: #/components/parameters/fleetCurrentOnly
-Response 200: OK
-Response 400: 

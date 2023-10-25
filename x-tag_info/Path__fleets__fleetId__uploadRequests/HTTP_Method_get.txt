@@ -12,5 +12,3 @@ Parameter Reference: #/components/parameters/limit
 Parameter Reference: #/components/parameters/bookmarkedOnlyDVR
 Parameter Reference: #/components/parameters/tagSearchDVR
 Parameter Reference: #/components/parameters/coachingCompletedDVR
-Response 200: OK
-Response 400: 
