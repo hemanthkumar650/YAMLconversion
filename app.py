@@ -5,7 +5,7 @@ def generate_api_suggestions(openapi_data, output_dir):
     paths = openapi_data.get("paths", {})
     for path, path_info in paths.items():
         sanitized_path = path.replace("/", "_").replace("{", "_").replace("}", "_")
-        path_dir = os.path.join(output_dir, f"Path_{path}")
+        path_dir = os.path.join(output_dir, f"Path_{sanitized_path}")
         os.makedirs(path_dir, exist_ok=True)
         for http_method, method_info in path_info.items():
             method_file_path = os.path.join(path_dir, f"HTTP_Method_{http_method}.txt")
@@ -27,6 +27,15 @@ def generate_api_suggestions(openapi_data, output_dir):
                 for response_code, response_info in responses.items():
                     description = response_info.get("description", "")
                     method_file.write(f"Response {response_code}: {description}\n")
+
+                if http_method == "post":
+                    request_body = method_info.get("requestBody", {})
+                    if request_body:
+                        content = request_body.get("content", {})
+                        for content_type, content_info in content.items():
+                            schema_ref = content_info.get("schema", {}).get("$ref", "")
+                            if schema_ref:
+                                method_file.write(f"Request Body Schema Reference: {schema_ref}\n")
 
 def create_entry_text_files(yaml_data, output_dir):
     try:
